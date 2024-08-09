@@ -1,0 +1,176 @@
+/* Basic Reset */
+html, body, div, form, input, button, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e9ecef;
+}
+
+.container {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h1 {
+    margin: 0;
+}
+
+.button-group button {
+    margin-left: 10px;
+}
+
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.chat-input {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Button styling */
+.btn-svg {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-svg img {
+    width: 32px;
+    height: 32px;
+    margin-top: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.btn-svg:hover img {
+    opacity: 0.8; /* Change the opacity on hover */
+}
+
+/* Ensure form controls align properly */
+.form-inline {
+    display: flex;
+    width: 100%;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+input.form-control {
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button.btn {
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+button.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+button.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Message Item Styling */
+#conversation {
+    margin-top: 30px;
+}
+
+#conversation .table td {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+#conversation .table tr {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+}
